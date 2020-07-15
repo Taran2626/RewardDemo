@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7808AED24BEE4CC003158ED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A7808AEC24BEE4CC003158ED /* README.md */; };
 		A7C36F8724BD800500648280 /* ViewControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C36F8624BD800500648280 /* ViewControllerConfigurator.swift */; };
 		A7C36F8924BD804A00648280 /* ViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C36F8824BD804A00648280 /* ViewControllerPresenter.swift */; };
 		A7C36F8C24BD81A400648280 /* RewardCellProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C36F8B24BD81A400648280 /* RewardCellProvider.swift */; };
@@ -17,7 +18,6 @@
 		CC034A63229672FB0005FF0E /* coupon.json in Resources */ = {isa = PBXBuildFile; fileRef = CC034A60229672FA0005FF0E /* coupon.json */; };
 		CC034A64229672FB0005FF0E /* cashback.json in Resources */ = {isa = PBXBuildFile; fileRef = CC034A61229672FA0005FF0E /* cashback.json */; };
 		CC034A66229674B90005FF0E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC034A65229674B90005FF0E /* Helpers.swift */; };
-		CC034A76229D567E0005FF0E /* Readme.pages in Resources */ = {isa = PBXBuildFile; fileRef = CC034A75229D567E0005FF0E /* Readme.pages */; };
 		CCB5F63E229522AF00C2D92C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5F63D229522AF00C2D92C /* AppDelegate.swift */; };
 		CCB5F640229522AF00C2D92C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5F63F229522AF00C2D92C /* ViewController.swift */; };
 		CCB5F643229522AF00C2D92C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB5F641229522AF00C2D92C /* Main.storyboard */; };
@@ -26,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7808AEC24BEE4CC003158ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		A7C36F8624BD800500648280 /* ViewControllerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConfigurator.swift; sourceTree = "<group>"; };
 		A7C36F8824BD804A00648280 /* ViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenter.swift; sourceTree = "<group>"; };
 		A7C36F8B24BD81A400648280 /* RewardCellProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardCellProvider.swift; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		CC034A60229672FA0005FF0E /* coupon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coupon.json; sourceTree = "<group>"; };
 		CC034A61229672FA0005FF0E /* cashback.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cashback.json; sourceTree = "<group>"; };
 		CC034A65229674B90005FF0E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		CC034A75229D567E0005FF0E /* Readme.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = Readme.pages; sourceTree = "<group>"; };
 		CCB5F63A229522AF00C2D92C /* RewardProblem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RewardProblem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB5F63D229522AF00C2D92C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCB5F63F229522AF00C2D92C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,8 +121,8 @@
 		CCB5F63C229522AF00C2D92C /* RewardProblem */ = {
 			isa = PBXGroup;
 			children = (
+				A7808AEC24BEE4CC003158ED /* README.md */,
 				A7C36F9124BD882600648280 /* UI */,
-				CC034A75229D567E0005FF0E /* Readme.pages */,
 				CC034A5E229672FA0005FF0E /* Data */,
 				CCB5F63D229522AF00C2D92C /* AppDelegate.swift */,
 				CC034A65229674B90005FF0E /* Helpers.swift */,
@@ -198,9 +198,9 @@
 				CC034A62229672FB0005FF0E /* offers.json in Resources */,
 				CC034A64229672FB0005FF0E /* cashback.json in Resources */,
 				CCB5F648229522B100C2D92C /* LaunchScreen.storyboard in Resources */,
+				A7808AED24BEE4CC003158ED /* README.md in Resources */,
 				CCB5F645229522B100C2D92C /* Assets.xcassets in Resources */,
 				CC034A63229672FB0005FF0E /* coupon.json in Resources */,
-				CC034A76229D567E0005FF0E /* Readme.pages in Resources */,
 				CCB5F643229522AF00C2D92C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

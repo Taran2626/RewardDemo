@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  RewardProblem
 //
-//  Created by Sachin B on 22/05/19.
-//  Copyright © 2019 Sachin B. All rights reserved.
+//  Created by Taranjeet Kaur on 22/05/19.
+//  Copyright © 2019 Taranjeet Kaur. All rights reserved.
 //
 
 import UIKit

@@ -3,7 +3,7 @@
 //  RewardProblem
 //
 //  Created by Taranjeet Kaur on 14/07/2020.
-//  Copyright © 2020 Sachin B. All rights reserved.
+//  Copyright © 2020 Taranjeet Kaur. All rights reserved.
 //
 
 

@@ -3,7 +3,7 @@
 //  RewardProblem
 //
 //  Created by Taranjeet Kaur on 14/07/2020.
-//  Copyright © 2020 Sachin B. All rights reserved.
+//  Copyright © 2020 Taranjeet Kaur. All rights reserved.
 //
 
 import UIKit
@@ -21,29 +21,37 @@ class RewardDataProviderImp: RewardDataProvider {
     
     init() {
         if let data = try? Helper.getData() {
-            
             self.rewards = data
             self.rewards = sortRewards()
         }
     }
     
     func sortRewards() -> [Reward] {
-                
-        let unscratched = rewards.filter { $0.getState() == .unscratched && $0.expiresAt > Date().millisecondsSince1970}.sorted(by: {$0.expiresAt < $1.expiresAt})
+        return sortUnscratched() + sortOpened(with: .offer) + sortOpened(with: .cashBack) + sortExpired()
+    }
+    
+    private func sortUnscratched() -> [Reward] {
+        return rewards.filter { $0.getState() == .unscratched && $0.expiresAt > Date().millisecondsSince1970}.sorted(by: {$0.expiresAt < $1.expiresAt})
+    }
+    
+    private func sortOpened(with type: BenefitType) -> [Reward]{
         
-        let openedOffernCoupon = rewards.filter { $0.getState() == .opened &&
-            ($0.benefit.getType() == BenefitType.offer || $0.benefit.getType() == BenefitType.coupon) &&
-            $0.benefit.useBy > Date().millisecondsSince1970
-        }.sorted(by: {$0.benefit.useBy > $1.benefit.useBy})
-        
-        let openedCashback = rewards.filter { $0.getState() == .opened &&
-            $0.benefit.getType() == BenefitType.cashBack &&
-            $0.benefit.useBy > Date().millisecondsSince1970}
-            .sorted(by: {$0.updatedAt > $1.updatedAt})
-        
-        let expired = rewards.filter { $0.getState() == .expired || $0.getState() == .unscratched && $0.expiresAt < Date().millisecondsSince1970 || $0.getState() == .opened && $0.benefit.useBy < Date().millisecondsSince1970}.sorted(by: {$0.updatedAt > $1.updatedAt})
-
-        return unscratched + openedOffernCoupon + openedCashback + expired
+        let rewardOpened = rewards.filter { $0.getState() == .opened && $0.benefit.useBy > Date().millisecondsSince1970 }
+        switch type {
+        case .offer,.coupon:
+            return rewardOpened.filter {($0.benefit.getType() == BenefitType.offer || $0.benefit.getType() == BenefitType.coupon) }
+                .sorted(by: {$0.benefit.useBy > $1.benefit.useBy})
+        case .cashBack:
+            return rewardOpened.filter { $0.getState() == .opened &&
+                $0.benefit.getType() == BenefitType.cashBack}
+                .sorted(by: {$0.updatedAt > $1.updatedAt})
+        case .none:
+            return []
+        }
+    }
+    
+    private func sortExpired() -> [Reward]{
+        return rewards.filter { $0.getState() == .expired || $0.getState() == .unscratched && $0.expiresAt < Date().millisecondsSince1970 || $0.getState() == .opened && $0.benefit.useBy < Date().millisecondsSince1970}.sorted(by: {$0.updatedAt > $1.updatedAt})
     }
     
     func numberOfItems() -> Int{

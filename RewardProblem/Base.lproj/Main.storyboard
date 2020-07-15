@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RewardProblem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HTQ-l6-lYU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.85780699823943662" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lNW-X9-1Es">
+                                    <size key="itemSize" width="183" height="188"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RewardCollectionViewCell" id="v1U-XY-RXH" customClass="RewardCollectionViewCell" customModule="RewardProblem" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="188"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="183" height="188"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dd9-ud-cAn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="183" height="188"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RewardID" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhq-iP-wEV">
+                                                            <rect key="frame" x="16" y="157.5" width="151" height="14.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="0.23239436620000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="Hhq-iP-wEV" secondAttribute="trailing" constant="16" id="66e-Ap-xFm"/>
+                                                        <constraint firstItem="Hhq-iP-wEV" firstAttribute="leading" secondItem="dd9-ud-cAn" secondAttribute="leading" constant="16" id="TMC-v8-ewh"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Hhq-iP-wEV" secondAttribute="bottom" constant="16" id="Zmd-hw-FSX"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="dd9-ud-cAn" secondAttribute="bottom" id="Fa3-35-PC4"/>
+                                            <constraint firstAttribute="trailing" secondItem="dd9-ud-cAn" secondAttribute="trailing" id="Pix-Cl-AcY"/>
+                                            <constraint firstItem="dd9-ud-cAn" firstAttribute="top" secondItem="v1U-XY-RXH" secondAttribute="top" id="k49-l2-Nr9"/>
+                                            <constraint firstItem="dd9-ud-cAn" firstAttribute="leading" secondItem="v1U-XY-RXH" secondAttribute="leading" id="n3q-lp-brV"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="containerView" destination="dd9-ud-cAn" id="wIe-eT-aN0"/>
+                                            <outlet property="rewardIdLabel" destination="Hhq-iP-wEV" id="SH5-mc-geA"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="C8G-Ji-VFG"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1PF-Oo-DLQ"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HTQ-l6-lYU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BRc-CD-vfu"/>
+                            <constraint firstAttribute="bottom" secondItem="HTQ-l6-lYU" secondAttribute="bottom" id="KWH-19-uaf"/>
+                            <constraint firstItem="HTQ-l6-lYU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="asj-qJ-NTQ"/>
+                            <constraint firstItem="HTQ-l6-lYU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="g6g-wd-egS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="HTQ-l6-lYU" id="lwL-qW-PSb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>

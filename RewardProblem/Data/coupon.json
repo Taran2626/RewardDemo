@@ -1,0 +1,48 @@
+{
+    "rewards": [
+      {
+        "type": "SCRATCH_CARD",
+        "rewardId": "OFR1",
+        "state": "OPENED",
+        "updatedAt": 1542818719043,
+        "benefit": {
+          "type": "COUPON",
+          "useBy": 1697609169000
+        },
+        "expiresAt": 1697609169000
+      },
+      {
+        "type": "SCRATCH_CARD",
+        "rewardId": "OFR2",
+        "state": "OPENED",
+        "updatedAt": 1542818719043,
+        "benefit": {
+          "type": "COUPON",
+          "useBy": 1550732857000
+        },
+        "expiresAt": 1550732857000
+      },
+      {
+        "type": "SCRATCH_CARD",
+        "rewardId": "OFR3",
+        "state": "OPENED",
+        "updatedAt": 1542818719043,
+        "benefit": {
+          "type": "COUPON",
+          "useBy": 1561100857000 
+        },
+        "expiresAt": 1561100857000
+      },
+      {
+        "type": "SCRATCH_CARD",
+        "rewardId": "OFR4",
+        "state": "EXPIRED",
+        "updatedAt": 1542818719043,
+        "benefit": {
+          "type": "COUPON",
+          "useBy": 1549004857000 
+        },
+        "expiresAt": 1549004857000
+      }
+    ]
+}

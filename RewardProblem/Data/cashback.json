@@ -1,0 +1,48 @@
+{
+    "rewards": [
+      {
+        "type": "SCRATCH_CARD",
+        "rewardId": "CB2",
+        "state": "UNSCRATCHED",
+        "updatedAt": 1542818719043,
+        "benefit": {
+          "type": "CASHBACK",
+          "useBy": 1924885800000
+        },
+        "expiresAt": 1924885800000
+      },
+      {
+        "type": "SCRATCH_CARD",
+        "rewardId": "CB1",
+        "state": "UNSCRATCHED",
+        "updatedAt": 1542818719043,
+        "benefit": {
+          "type": "CASHBACK",
+          "useBy": 1697609169000
+        },
+        "expiresAt": 1697609169000
+      },
+      {
+        "type": "SCRATCH_CARD",
+        "rewardId": "CB3",
+        "state": "EXPIRED",
+        "updatedAt": 1542818719043,
+        "benefit": {
+          "type": "CASHBACK",
+          "useBy": 1924885800000
+        },
+        "expiresAt": 1553065657000
+      },
+      {
+          "type": "SCRATCH_CARD",
+          "rewardId": "CB3",
+          "state": "OPENED",
+          "updatedAt": 1558606136000,
+          "benefit": {
+              "type": "CASHBACK",
+              "useBy": 1558606136000
+          },
+          "expiresAt": 1558606136000
+      }
+    ]
+}

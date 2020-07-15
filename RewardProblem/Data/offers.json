@@ -1,0 +1,70 @@
+{
+    "rewards": [
+      {
+        "type": "SCRATCH_CARD",
+        "rewardId": "OFR1",
+        "state": "OPENED",
+        "updatedAt": 1542818719043,
+        "benefit": {
+          "type": "OFFER",
+          "useBy": 1561187257000
+        },
+        "expiresAt": 1561187257000
+      },
+      {
+        "type": "SCRATCH_CARD",
+        "rewardId": "OFR2",
+        "state": "OPENED",
+        "updatedAt": 1542818719043,
+        "benefit": {
+          "type": "OFFER",
+          "useBy": 1697609169000
+        },
+        "expiresAt": 1697609169000
+      },
+      {
+        "type": "SCRATCH_CARD",
+        "rewardId": "OFR3",
+        "state": "OPENED",
+        "updatedAt": 1542818719043,
+        "benefit": {
+          "type": "OFFER",
+          "useBy": 1697609169000
+        },
+        "expiresAt": 1697609169000
+      },
+      {
+        "type": "SCRATCH_CARD",
+        "rewardId": "OFR4",
+        "state": "OPENED",
+        "updatedAt": 1542818719043,
+        "benefit": {
+          "type": "OFFER",
+          "useBy": 1549004857000 
+        },
+        "expiresAt": 1549004857000
+      },
+      {
+          "type": "SCRATCH_CARD",
+          "rewardId": "OFR5",
+          "state": "EXPIRED",
+          "updatedAt": 1548238136000,
+          "benefit": {
+              "type": "OFFER",
+              "useBy": 1548238136000
+          },
+          "expiresAt": 1548238136000
+      },
+      {
+          "type": "SCRATCH_CARD",
+          "rewardId": "OFR6",
+          "state": "UNSCRATCHED",
+          "updatedAt": 1548238136000,
+          "benefit": {
+              "type": "OFFER",
+              "useBy": 1569233336000
+          },
+          "expiresAt": 1569233336000
+      }
+    ]
+}
